@@ -1,0 +1,21 @@
+div.hidden {
+	opacity: 0;
+	display: none;
+}
+
+div.visible {
+	opacity: 1;
+	display: block;
+	animation: 1s fade-in;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		display: none;
+	}
+	100% {
+		opacity: 1;
+		display: block;
+	}
+}

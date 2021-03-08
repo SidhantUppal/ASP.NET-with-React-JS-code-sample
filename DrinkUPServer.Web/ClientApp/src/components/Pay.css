@@ -1,0 +1,23 @@
+.sr-input,
+.sr-select,
+input[type="text"] {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 5px 12px;
+  height: 44px;
+  width: 100%;
+  background: white;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #32325d;
+}
+
+.sr-input::placeholder,
+input[type="text"]::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+.sr-card-element {
+  padding-top: 12px;
+}
+

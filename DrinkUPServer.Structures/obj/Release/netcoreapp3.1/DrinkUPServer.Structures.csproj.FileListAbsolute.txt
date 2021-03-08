@@ -1,0 +1,9 @@
+E:\My Projects\DrinkUPServer\DrinkUPServer.Structures\bin\Release\netcoreapp3.1\DrinkUPServer.Structures.deps.json
+E:\My Projects\DrinkUPServer\DrinkUPServer.Structures\bin\Release\netcoreapp3.1\DrinkUPServer.Structures.dll
+E:\My Projects\DrinkUPServer\DrinkUPServer.Structures\bin\Release\netcoreapp3.1\DrinkUPServer.Structures.pdb
+E:\My Projects\DrinkUPServer\DrinkUPServer.Structures\obj\Release\netcoreapp3.1\DrinkUPServer.Structures.csprojAssemblyReference.cache
+E:\My Projects\DrinkUPServer\DrinkUPServer.Structures\obj\Release\netcoreapp3.1\DrinkUPServer.Structures.AssemblyInfoInputs.cache
+E:\My Projects\DrinkUPServer\DrinkUPServer.Structures\obj\Release\netcoreapp3.1\DrinkUPServer.Structures.AssemblyInfo.cs
+E:\My Projects\DrinkUPServer\DrinkUPServer.Structures\obj\Release\netcoreapp3.1\DrinkUPServer.Structures.csproj.CoreCompileInputs.cache
+E:\My Projects\DrinkUPServer\DrinkUPServer.Structures\obj\Release\netcoreapp3.1\DrinkUPServer.Structures.dll
+E:\My Projects\DrinkUPServer\DrinkUPServer.Structures\obj\Release\netcoreapp3.1\DrinkUPServer.Structures.pdb

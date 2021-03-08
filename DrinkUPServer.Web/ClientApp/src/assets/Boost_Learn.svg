@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="162.5" height="51" viewBox="0 0 162.5 51">
+  <defs>
+    <filter id="Polygon_1" x="116.5" y="0" width="46" height="51" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_189" data-name="Group 189" transform="translate(-760 -321.969)">
+    <g transform="matrix(1, 0, 0, 1, 760, 321.97)" filter="url(#Polygon_1)">
+      <path id="Polygon_1-2" data-name="Polygon 1" d="M16.5,0,33,28H0Z" transform="translate(125.5 39) rotate(-90)" fill="#cbcbcb"/>
+    </g>
+    <text id="LEARN" transform="translate(810 354.903)" fill="#b1b1b1" font-size="25" font-family="Gotham-Medium, Gotham" font-weight="500" letter-spacing="0.1em"><tspan x="-49.9" y="0">LEARN</tspan></text>
+  </g>
+</svg>

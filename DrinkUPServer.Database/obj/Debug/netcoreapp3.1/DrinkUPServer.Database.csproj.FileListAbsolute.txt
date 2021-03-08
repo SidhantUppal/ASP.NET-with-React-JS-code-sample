@@ -1,0 +1,34 @@
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Database.deps.json
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Database.runtimeconfig.json
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Database.runtimeconfig.dev.json
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Database.dll
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Database.pdb
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Structures.dll
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Structures.pdb
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.csprojAssemblyReference.cache
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.Migrations.Initial.resources
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.csproj.GenerateResource.cache
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.AssemblyInfoInputs.cache
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.AssemblyInfo.cs
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.csproj.CoreCompileInputs.cache
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.csproj.CopyComplete
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.dll
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.pdb
+E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.genruntimeconfig.cache
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Database.deps.json
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Database.runtimeconfig.json
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Database.runtimeconfig.dev.json
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Database.dll
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Database.pdb
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Structures.dll
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\bin\Debug\netcoreapp3.1\DrinkUPServer.Structures.pdb
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.csprojAssemblyReference.cache
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.Migrations.Initial.resources
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.csproj.GenerateResource.cache
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.AssemblyInfoInputs.cache
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.AssemblyInfo.cs
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.csproj.CoreCompileInputs.cache
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.csproj.CopyComplete
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.dll
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.pdb
+E:\Talentelgia\DrinkUPServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.genruntimeconfig.cache

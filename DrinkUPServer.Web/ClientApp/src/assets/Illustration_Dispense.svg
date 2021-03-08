@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="349" height="612.838" viewBox="0 0 349 612.838">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.547" stop-color="#fdfdfd"/>
+      <stop offset="1" stop-color="#e8e8e8"/>
+    </linearGradient>
+    <filter id="Path_63" x="41.857" y="180.792" width="264.611" height="432.046" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.133"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_61" data-name="Group 61" transform="translate(-365.588 -714)">
+    <g id="Group_60" data-name="Group 60" transform="translate(365.588 714)">
+      <rect id="Rectangle_44" data-name="Rectangle 44" width="349" height="567" rx="24" fill="#656565"/>
+      <rect id="Rectangle_43" data-name="Rectangle 43" width="31" height="73" transform="translate(159)" fill="#b1b1b1"/>
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_63)">
+        <path id="Path_63-2" data-name="Path 63" d="M35.879,56.046Q4.784,56.046,0,20.167H0V-180.755c0-19.135,14.352-40.663,26.311-57.406Q38.271-254.9,46.643-286h81.326q8.372,31.1,20.331,47.839c11.96,16.744,26.311,38.271,26.311,57.406V20.167h0q-4.784,35.879-35.879,35.879Z" transform="translate(86.86 508.79)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

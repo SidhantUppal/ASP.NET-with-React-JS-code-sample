@@ -1,0 +1,8 @@
+.circle {
+	animation: myOrbit 1.5s linear infinite;
+}
+
+@keyframes myOrbit {
+	from { transform: rotate(0deg) translateX(min(17vw, 170px)) rotate(0deg); }
+	to   { transform: rotate(360deg) translateX(min(17vw, 170px)) rotate(-360deg); }
+}

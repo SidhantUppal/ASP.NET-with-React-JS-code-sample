@@ -1,0 +1,17 @@
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\bin\Release\netcoreapp3.1\DrinkUPServer.MachineServer.deps.json
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\bin\Release\netcoreapp3.1\DrinkUPServer.MachineServer.runtimeconfig.json
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\bin\Release\netcoreapp3.1\DrinkUPServer.MachineServer.runtimeconfig.dev.json
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\bin\Release\netcoreapp3.1\DrinkUPServer.MachineServer.dll
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\bin\Release\netcoreapp3.1\DrinkUPServer.MachineServer.pdb
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\bin\Release\netcoreapp3.1\DrinkUPServer.Database.dll
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\bin\Release\netcoreapp3.1\DrinkUPServer.Structures.dll
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\bin\Release\netcoreapp3.1\DrinkUPServer.Database.pdb
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\bin\Release\netcoreapp3.1\DrinkUPServer.Structures.pdb
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\obj\Release\netcoreapp3.1\DrinkUPServer.MachineServer.csprojAssemblyReference.cache
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\obj\Release\netcoreapp3.1\DrinkUPServer.MachineServer.AssemblyInfoInputs.cache
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\obj\Release\netcoreapp3.1\DrinkUPServer.MachineServer.AssemblyInfo.cs
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\obj\Release\netcoreapp3.1\DrinkUPServer.MachineServer.csproj.CoreCompileInputs.cache
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\obj\Release\netcoreapp3.1\DrinkUPServer.MachineServer.csproj.CopyComplete
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\obj\Release\netcoreapp3.1\DrinkUPServer.MachineServer.dll
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\obj\Release\netcoreapp3.1\DrinkUPServer.MachineServer.pdb
+E:\My Projects\DrinkUPServer\DrinkUPServer.MachineServer\obj\Release\netcoreapp3.1\DrinkUPServer.MachineServer.genruntimeconfig.cache
