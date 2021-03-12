@@ -15,3 +15,20 @@ E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\Dr
 E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.dll
 E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.pdb
 E:\My Projects\DrinkUPServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.genruntimeconfig.cache
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\bin\Release\netcoreapp3.1\DrinkUPServer.Database.deps.json
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\bin\Release\netcoreapp3.1\DrinkUPServer.Database.runtimeconfig.json
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\bin\Release\netcoreapp3.1\DrinkUPServer.Database.runtimeconfig.dev.json
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\bin\Release\netcoreapp3.1\DrinkUPServer.Database.dll
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\bin\Release\netcoreapp3.1\DrinkUPServer.Database.pdb
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\bin\Release\netcoreapp3.1\DrinkUPServer.Structures.dll
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\bin\Release\netcoreapp3.1\DrinkUPServer.Structures.pdb
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.csprojAssemblyReference.cache
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.Migrations.Initial.resources
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.csproj.GenerateResource.cache
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.AssemblyInfoInputs.cache
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.AssemblyInfo.cs
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.csproj.CoreCompileInputs.cache
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.csproj.CopyComplete
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.dll
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.pdb
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Release\netcoreapp3.1\DrinkUPServer.Database.genruntimeconfig.cache

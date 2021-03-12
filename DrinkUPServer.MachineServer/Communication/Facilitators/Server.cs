@@ -16,9 +16,11 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
         internal event ClientName ClientRemoved;
 
         // Set the Server IP for debug server.
+        ///private static IPAddress ServerIP = new IPAddress( new byte[] { 192, 168, 1, 4 } );
         private static IPAddress ServerIP = new IPAddress( new byte[] { 192, 168, 1, 4 } );
 
         // Port number for direct machine communication.
+        //private static readonly int ServerPort = 3687;
         private static readonly int ServerPort = 3687;
 
         private readonly JsonSerializerOptions serializerOptions = new JsonSerializerOptions

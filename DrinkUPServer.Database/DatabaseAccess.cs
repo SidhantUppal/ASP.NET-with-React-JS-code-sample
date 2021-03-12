@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Data;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
 
 namespace DrinkUPServer.Database
 {
@@ -491,6 +495,38 @@ namespace DrinkUPServer.Database
                 ).ToList();
             } );
             return boosts;
+        }
+
+        public async Task<DataTable> GetAzureIPDetails() 
+        {
+            // Initialization.  
+            DataTable responseObj = new DataTable();
+
+            // HTTP GET.  
+            using (var client = new HttpClient())
+            {
+                // Setting Base address.  
+                client.BaseAddress = new Uri("http://dummy.restapiexample.com/api/v1/employees");
+
+                // Setting content type.  
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                // Initialization.  
+                HttpResponseMessage response = new HttpResponseMessage();
+
+                // HTTP GET  
+                response = await client.GetAsync("api/WebApi").ConfigureAwait(false);
+
+                // Verification  
+                if (response.IsSuccessStatusCode)
+                {
+                    // Reading Response.  
+                    string result = response.Content.ReadAsStringAsync().Result;
+                    responseObj = JsonConvert.DeserializeObject<DataTable>(result);
+                }
+            }
+
+            return responseObj;
         }
     }
 }
