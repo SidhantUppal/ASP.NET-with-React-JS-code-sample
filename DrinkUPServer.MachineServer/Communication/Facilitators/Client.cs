@@ -41,6 +41,7 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
 
         internal void Send ( string message )
         {
+            Utility.LogFile(message, "Send");
             Sender.SendData( message );
         }
 
@@ -51,15 +52,18 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
 
         private void WhenMessageReceived ( object sender, MessageEventArgs e )
         {
+            Utility.LogFile("", "WhenMessageReceived");
             Message?.Invoke( this, e );
         }
 
         private void WhenKeepAlive ( object sender, bool e )
         {
+            Utility.LogFile("", "WhenKeepAlive");
         }
 
         private void WhenProblem ( object sender, ErrorEventArgs e )
         {
+            Utility.LogFile("", "WhenProblem");
             Problem?.Invoke( this );
         }
 

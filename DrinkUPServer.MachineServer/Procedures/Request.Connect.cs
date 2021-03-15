@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using DrinkUPServer.MachineServer.Communication;
 
 namespace DrinkUPServer.MachineServer.Procedures
 {
@@ -12,6 +13,7 @@ namespace DrinkUPServer.MachineServer.Procedures
     {
         internal static ConnectionResponse Connect ( ConnectionReference connectionReference )
         {
+            Utility.LogFile(connectionReference.Query, "Request Connet");
             if ( connectionReference.Query == "mach-one-query" )
             {
                 try
@@ -37,7 +39,7 @@ namespace DrinkUPServer.MachineServer.Procedures
                         };
                     }
                 }
-                catch { }
+                catch(Exception ex) { Utility.LogFile(ex.Message, "Request"); }
             }
             //else
             //{
@@ -67,6 +69,7 @@ namespace DrinkUPServer.MachineServer.Procedures
             //}
             else
             {
+                Utility.LogFile(connectionReference.Query, "Request Conncet else");
                 if ( Pool.HasMachineQuery( connectionReference.Query ) )
                 {
                     string machine = Pool.GetMachineFromQuery( connectionReference.Query );

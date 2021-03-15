@@ -22,6 +22,7 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         private static void QueryDeliveringRunner ()
         {
+            Utility.LogFile("QueryDeliveringRunner", "Functions");
             while ( true )
             {
                 Thread.Sleep( QueryDeliveringInterval );
@@ -38,7 +39,7 @@ namespace DrinkUPServer.MachineServer.Procedures
                         For = For,
                         Query = query
                     };
-
+                    Utility.LogFile(queryDelivery.For+" "+queryDelivery.Query, "QueryDeliveringRunner");
                     Pool.Connection.Send( queryDelivery );
                 } );
             }

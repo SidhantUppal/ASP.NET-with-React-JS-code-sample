@@ -17,7 +17,7 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
 
         // Set the Server IP for debug server.
         ///private static IPAddress ServerIP = new IPAddress( new byte[] { 192, 168, 1, 4 } );
-        private static IPAddress ServerIP = new IPAddress( new byte[] { 192, 168, 1, 4 } );
+        private static IPAddress ServerIP = new IPAddress(new byte[] { 20, 186, 115, 164 });
 
         // Port number for direct machine communication.
         //private static readonly int ServerPort = 3687;
@@ -42,12 +42,12 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
         {
 #if DEBUG
 #else
-            ServerIP = Dns.GetHostEntry( Dns.GetHostName() ).AddressList.Last().MapToIPv4();
+            //ServerIP = Dns.GetHostEntry( Dns.GetHostName() ).AddressList.Last().MapToIPv4();
 #endif
             IPEndPoint EndPoint = new IPEndPoint( ServerIP, ServerPort );
 
             Listener = new TcpListener( EndPoint );
-
+            Utility.LogFile("Listener started at ", ServerIP + ":" + ServerPort);
             Thread ListeningThread = new Thread( ListeningRunner );
             ListeningThread.Start();
 
@@ -61,19 +61,20 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
             {
                 Listener.Start();
 
-                while ( true )
+                while (true)
                 {
                     TcpClient tcpClient = Listener.AcceptTcpClient();
-
-                    lock ( ClientQueueLock )
+                    var str = $"Client {tcpClient.Client.RemoteEndPoint} connected at {ServerIP}:{ServerPort}";
+                    Utility.LogFile("ListeningRunner", str);
+                    lock (ClientQueueLock)
                     {
-                        ClientQueue.Enqueue( tcpClient );
+                        ClientQueue.Enqueue(tcpClient);
                     }
                 }
             }
-            catch ( InvalidOperationException ) { }
-            catch ( SocketException ) { }
-            catch ( ThreadAbortException ) { }
+            catch (InvalidOperationException ex) { Utility.LogFile(ex.Message, "Server ListeningRunner InvalidOperationException"); }
+            catch (SocketException ex) { Utility.LogFile(ex.Message, "Server ListeningRunner IOException"); }
+            catch (ThreadAbortException ex) { Utility.LogFile(ex.Message, "Server ListeningRunner ThreadAbortException"); }
             finally { }
         }
 
@@ -114,18 +115,20 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
                     }
                 }
             }
-            catch ( InvalidOperationException ) { }
-            catch ( SocketException ) { }
-            catch ( ThreadAbortException ) { }
+            catch (InvalidOperationException ex) { Utility.LogFile(ex.Message, "Server ServicingRunner InvalidOperationException"); }
+            catch (SocketException ex) { Utility.LogFile(ex.Message, "Server ServicingRunner IOException"); }
+            catch (ThreadAbortException ex) { Utility.LogFile(ex.Message, "Server ServicingRunner ThreadAbortException"); }
             finally { }
         }
 
         private void WhenClientProblem ( Client client )
         {
+            
             if ( MachineIdToClient.ContainsValue( client ) )
             {
                 foreach ( string s in ( from x in MachineIdToClient where x.Value == client select x.Key ).ToList() )
                 {
+                   // Utility.LogFile("WhenClientProblem remove ", s);
                     RemoveClient( s );
                 }
             }
@@ -133,12 +136,14 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
 
         private bool RemoveClient ( string name )
         {
+            Utility.LogFile("RemoveClient ", name);
             ClientRemoved?.Invoke( name );
             return MachineIdToClient.Remove( name );
         }
 
         private void AddClient ( string name, Client client )
         {
+            Utility.LogFile("AddClient ", name);
             if ( !MachineIdToClient.ContainsKey( name ) )
             {
                 MachineIdToClient.Add( name, client );
@@ -150,6 +155,7 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
         {
             {
                 string message = e.Response;
+                Utility.LogFile("RaiseMessageEvent ", message);
                 ClientSentMessage receivedMessage = JsonSerializer.Deserialize<ClientSentMessage>( message, serializerOptions );
 
                 AddClient( receivedMessage.From, client );
@@ -162,6 +168,7 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
         {
             if ( MachineIdToClient.ContainsKey( message.For ) )
             {
+                Utility.LogFile("Send ", message.For + " message " + message);
                 MachineIdToClient[ message.For ].Send( message );
             }
         }

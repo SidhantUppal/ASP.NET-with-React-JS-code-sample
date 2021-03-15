@@ -25,3 +25,12 @@ E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\
 E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Structures\obj\Debug\netcoreapp3.1\DrinkUPServer.Structures.csproj.CoreCompileInputs.cache
 E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Structures\obj\Debug\netcoreapp3.1\DrinkUPServer.Structures.dll
 E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Structures\obj\Debug\netcoreapp3.1\DrinkUPServer.Structures.pdb
+C:\Users\lenovo\Documents\GitHub\drinkUpServer\DrinkUPServer.Structures\bin\Debug\netcoreapp3.1\DrinkUPServer.Structures.deps.json
+C:\Users\lenovo\Documents\GitHub\drinkUpServer\DrinkUPServer.Structures\bin\Debug\netcoreapp3.1\DrinkUPServer.Structures.dll
+C:\Users\lenovo\Documents\GitHub\drinkUpServer\DrinkUPServer.Structures\bin\Debug\netcoreapp3.1\DrinkUPServer.Structures.pdb
+C:\Users\lenovo\Documents\GitHub\drinkUpServer\DrinkUPServer.Structures\obj\Debug\netcoreapp3.1\DrinkUPServer.Structures.csprojAssemblyReference.cache
+C:\Users\lenovo\Documents\GitHub\drinkUpServer\DrinkUPServer.Structures\obj\Debug\netcoreapp3.1\DrinkUPServer.Structures.AssemblyInfoInputs.cache
+C:\Users\lenovo\Documents\GitHub\drinkUpServer\DrinkUPServer.Structures\obj\Debug\netcoreapp3.1\DrinkUPServer.Structures.AssemblyInfo.cs
+C:\Users\lenovo\Documents\GitHub\drinkUpServer\DrinkUPServer.Structures\obj\Debug\netcoreapp3.1\DrinkUPServer.Structures.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Documents\GitHub\drinkUpServer\DrinkUPServer.Structures\obj\Debug\netcoreapp3.1\DrinkUPServer.Structures.dll
+C:\Users\lenovo\Documents\GitHub\drinkUpServer\DrinkUPServer.Structures\obj\Debug\netcoreapp3.1\DrinkUPServer.Structures.pdb

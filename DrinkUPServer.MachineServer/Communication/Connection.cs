@@ -23,6 +23,7 @@ namespace DrinkUPServer.MachineServer.Communication
 
         public Connection ()
         {
+            Utility.LogFile("", "Connection");
             Server = new Server();
             Server.MessageEvent += RaiseMessageEvent;
 
@@ -38,11 +39,13 @@ namespace DrinkUPServer.MachineServer.Communication
 
         private void WhenMachineConnected ( string clientName )
         {
+            Utility.LogFile(clientName, "WhenMachineConnected");
             MachineConnected?.Invoke( clientName );
         }
 
         private void WhenMachineDisconnected ( string clientName )
         {
+            Utility.LogFile(clientName, "WhenMachineDisConnected");
             MachineDisconnected?.Invoke( clientName );
         }
 
@@ -50,7 +53,7 @@ namespace DrinkUPServer.MachineServer.Communication
         {
             string message = e.Response;
             string type = JsonSerializer.Deserialize<Message>( message, serializerOptions ).Type;
-
+            Utility.LogFile(message, "RaiseMessageEvent");
             if ( MessageTypeToTypeOfMessage.ContainsKey( type ) )
             {
                 Type construct = MessageTypeToTypeOfMessage[ type ];
@@ -69,6 +72,7 @@ namespace DrinkUPServer.MachineServer.Communication
 
         public T ParseMessage<T> ( string message ) where T : ClientSentMessage
         {
+            Utility.LogFile(message, "ParseMessage");
             return JsonSerializer.Deserialize<T>( message, serializerOptions );
         }
         public void Send<T> ( T message ) where T : ServerSentMessage
@@ -81,9 +85,10 @@ namespace DrinkUPServer.MachineServer.Communication
 
             foreach ( MessageAttribute attribute in Attribute.GetCustomAttributes( type, typeof( MessageAttribute ) ) )
             {
+                Utility.LogFile(message.For + "" + message.Type, "Send");
                 message.Type = attribute.Type;
             }
-
+            Utility.LogFile(message.For + "" + message.Type, "Send");
             Server.Send( message );
         }
 

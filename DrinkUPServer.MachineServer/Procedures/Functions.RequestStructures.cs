@@ -1,4 +1,5 @@
-﻿using DrinkUPServer.MachineServer.Messages;
+﻿using DrinkUPServer.MachineServer.Communication;
+using DrinkUPServer.MachineServer.Messages;
 using DrinkUPServer.Structures.Constructs;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ namespace DrinkUPServer.MachineServer.Procedures
     {
         internal static void RequestStructures ()
         {
+            Utility.LogFile("RequestStructures", "Functions");
             Pool.Connection.RegisterMessageListener<StructuresRequest>( RequestStructuresHandler );
         }
 
@@ -18,7 +20,7 @@ namespace DrinkUPServer.MachineServer.Procedures
             var ipDetails = await Pool.Database.GetAzureIPDetails();
 
             Machine machine = await Pool.Database.GetMachine( message.From );
-
+            Utility.LogFile(machine.Name, "Functions");
             SizesDelivery sizeDelivery = new SizesDelivery
             {
                 For = message.From,
@@ -26,7 +28,7 @@ namespace DrinkUPServer.MachineServer.Procedures
             };
 
             Pool.Connection.Send( sizeDelivery );
-
+            Utility.LogFile("Send size", "Functions");
             BoostsDelivery boostDelivery = new BoostsDelivery
             {
                 For = message.From,
@@ -34,6 +36,7 @@ namespace DrinkUPServer.MachineServer.Procedures
             };
 
             Pool.Connection.Send( boostDelivery );
+            Utility.LogFile("Send boost", "Functions");
         }
     }
 }

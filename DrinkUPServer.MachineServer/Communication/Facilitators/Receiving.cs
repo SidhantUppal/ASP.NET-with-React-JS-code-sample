@@ -78,10 +78,13 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
                     }
                 }
             }
-            catch ( ThreadAbortException ) { }
-            catch ( ObjectDisposedException ) { }
+            catch ( ThreadAbortException ex) {
+                  Utility.LogFile(ex.Message, "Receiving ThreadAbortException");
+            }
+            catch ( ObjectDisposedException ex) { Utility.LogFile(ex.Message, "Receiving ObjectDisposedException"); }
             catch ( IOException ex )
             {
+                Utility.LogFile(ex.Message, "Receiving IOException");
                 Problem?.Invoke( this, new ErrorEventArgs( ex ) );
             }
             finally { }

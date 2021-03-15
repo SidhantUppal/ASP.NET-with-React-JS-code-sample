@@ -34,6 +34,7 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         private static void WhenMachineConnected ( string clientName )
         {
+            Utility.LogFile(clientName, "WhenMachineConnected");
             lock ( MachineSessionsLock )
             {
                 MachineSessions.Add( clientName, null );
@@ -47,6 +48,7 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         private static void WhenMachineDisconnected ( string clientName )
         {
+            Utility.LogFile(clientName, "WhenMachineDisConnected");
             lock ( MachineSessionsLock )
             {
                 MachineSessions.Remove( clientName );
@@ -60,13 +62,16 @@ namespace DrinkUPServer.MachineServer.Procedures
             }
         }
 
-        internal static List<string> GetMachinesList ()
+        internal static List<string> GetMachinesList()
         {
+            //Utility.LogFile("GetMachinesList", "WhenMachineConnected");
             IEnumerable<string> enumerable;
-            lock ( MachineSessionsLock )
+            lock (MachineSessionsLock)
             {
-                enumerable = ( from m in MachineSessions select m.Key );
+                enumerable = (from m in MachineSessions select m.Key);
             }
+            if (enumerable.ToList().Count > 0)
+                Utility.LogFile("GetMachinesList " + enumerable.ToList().Count, "WhenMachineConnected");
             return enumerable.ToList();
         }
 
@@ -88,6 +93,7 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         internal static void AddMachineQuery ( string clientName, string query )
         {
+            Utility.LogFile(clientName+" "+ query, "AddMachineQuery");
             lock ( MachineQueries )
             {
                 lock ( QueryToMachineLock )
@@ -100,6 +106,7 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         internal static bool HasMachineQuery ( string query )
         {
+            Utility.LogFile(query, "HasMachineQuery");
             bool output = false;
             lock ( QueryToMachineLock )
             {
@@ -110,6 +117,7 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         internal static string GetMachineFromQuery ( string query )
         {
+            Utility.LogFile(query, "GetMachineFromQuery");
             string machine = null;
             lock ( QueryToMachineLock )
             {
@@ -120,6 +128,7 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         internal static bool MachineConnected ( string machine )
         {
+            Utility.LogFile(machine, "MachineConnected");
             bool output = false;
             lock ( MachineSessionsLock )
             {
@@ -130,6 +139,7 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         internal static bool MachineInUse ( string machine )
         {
+            Utility.LogFile(machine, "MachineInUse");
             bool output = false;
             lock ( MachineSessionsLock )
             {
@@ -147,6 +157,7 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         internal static Session GetSessionFromMachineId ( string machine )
         {
+            Utility.LogFile(machine, "GetSessionFromMachineId");
             Session session = null;
 
             lock ( MachineSessionsLock )
@@ -159,6 +170,7 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         internal static Session GetSessionFromTransactionId ( string transactionId )
         {
+            Utility.LogFile(transactionId, "GetSessionFromTransactionId");
             Session session = null;
 
             lock ( TransactionStoreLock )
@@ -173,6 +185,7 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         internal static bool SetSession ( Session session )
         {
+            Utility.LogFile(session.Machine, "SetSession");
             if ( MachineInUse( session.Machine ) )
             {
                 return false;
@@ -202,6 +215,7 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         internal static bool ClearSession ( string machine )
         {
+            Utility.LogFile(machine, "ClearSession");
             if ( MachineInUse( machine ) )
             {
                 Session session = GetSessionFromMachineId( machine );

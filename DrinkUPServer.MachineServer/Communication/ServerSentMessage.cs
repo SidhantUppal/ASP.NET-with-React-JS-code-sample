@@ -18,6 +18,7 @@ namespace DrinkUPServer.MachineServer.Communication
 
         public override string ToString ()
         {
+            Utility.LogFile(Type + " " + For, "ServerSentMessage");
             return JsonSerializer.Serialize( this, serializerOptions );
         }
     }

@@ -1,3 +1,4 @@
+using DrinkUPServer.MachineServer.Communication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -44,18 +45,20 @@ namespace DrinkUPServer.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure ( IApplicationBuilder app, IWebHostEnvironment env )
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             App = app;
             Env = env;
 
-            if ( Env.IsDevelopment() )
+            Utility.LogFile(env.EnvironmentName, "Configure");
+
+            if (Env.IsDevelopment())
             {
                 App.UseDeveloperExceptionPage();
             }
             else
             {
-                App.UseExceptionHandler( "/Error" );
+                App.UseExceptionHandler("/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 App.UseHsts();
             }
@@ -66,8 +69,8 @@ namespace DrinkUPServer.Web
 
             App.UseRouting();
 
-            App.UseEndpoints( ConstructEndpoints );
-            App.UseSpa( ConstructSpa );
+            App.UseEndpoints(ConstructEndpoints);
+            App.UseSpa(ConstructSpa);
         }
 
         private void ConstructEndpoints ( IEndpointRouteBuilder endpoint )

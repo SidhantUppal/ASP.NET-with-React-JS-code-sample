@@ -1,0 +1,60 @@
+Data Time:03/15/21 12:49:47 AM
+Exception Name:RequestStructures
+Event Name:Functions
+-------------------------------------------------
+                                                 
+Data Time:03/15/21 12:49:47 AM
+Exception Name:
+Event Name:Connection
+-------------------------------------------------
+                                                 
+Data Time:03/15/21 12:49:47 AM
+Exception Name:Listener started at 
+Event Name:20.186.115.164:3687
+-------------------------------------------------
+                                                 
+Data Time:03/15/21 12:49:47 AM
+Exception Name:Run
+Event Name:Program
+-------------------------------------------------
+                                                 
+Data Time:03/15/21 12:49:47 AM
+Exception Name:The requested address is not valid in its context.
+Event Name:Server ListeningRunner IOException
+-------------------------------------------------
+                                                 
+Data Time:03/15/21 12:51:02 AM
+Exception Name:RequestStructures
+Event Name:Functions
+-------------------------------------------------
+                                                 
+Data Time:03/15/21 12:51:02 AM
+Exception Name:
+Event Name:Connection
+-------------------------------------------------
+                                                 
+Data Time:03/15/21 12:51:02 AM
+Exception Name:Listener started at 
+Event Name:20.186.115.164:3687
+-------------------------------------------------
+                                                 
+Data Time:03/15/21 12:51:02 AM
+Exception Name:Run
+Event Name:Program
+-------------------------------------------------
+                                                 
+Data Time:03/15/21 12:51:02 AM
+Exception Name:QueryDeliveringRunner
+Event Name:Functions
+-------------------------------------------------
+                                                 
+Data Time:03/15/21 12:51:02 AM
+Exception Name:The requested address is not valid in its context.
+Event Name:Server ListeningRunner IOException
+-------------------------------------------------
+                                                 
+Data Time:03/15/21 12:51:17 AM
+Exception Name:Development
+Event Name:Configure
+-------------------------------------------------
+                                                 

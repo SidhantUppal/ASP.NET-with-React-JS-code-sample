@@ -42,6 +42,7 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
         {
             lock ( MessageQueueLock )
             {
+                Utility.LogFile(message, "Sending");
                 MessageQueue.Enqueue( message );
             }
         }
@@ -49,7 +50,7 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
         private string PrepareMessage ( string message )
         {
             string guid = Convert.ToBase64String( Guid.NewGuid().ToByteArray() );
-
+            Utility.LogFile($"<![MESSAGE[{ guid }[{ message }]{ guid }]]>", "Sending");
             return $"<![MESSAGE[{ guid }[{ message }]{ guid }]]>";
         }
 
@@ -71,6 +72,9 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
                         byte[] keepAlive = Encoding.ASCII.GetBytes( KeepAliveMessage );
                         NetworkStream.Write( keepAlive, 0, keepAlive.Length );
                         LastKeepAlive = DateTime.Now;
+
+                        var reader = new StreamReader(NetworkStream, Encoding.UTF8);
+                        Utility.LogFile(reader.ReadToEnd(), "sending if ");
                     }
 
                     if ( count == 0 )
@@ -88,14 +92,21 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
 
                         byte[] binaryMessage = Encoding.ASCII.GetBytes( PrepareMessage( message ) );
                         NetworkStream.Write( binaryMessage, 0, binaryMessage.Length );
+
+                        var reader = new StreamReader(NetworkStream, Encoding.UTF8);
+                        Utility.LogFile(reader.ReadToEnd(), "sending else ");
                     }
                 }
             }
-            catch ( ThreadAbortException ) { }
-            catch ( ObjectDisposedException ) { }
-            catch ( IOException ex )
+            catch (ThreadAbortException ex)
             {
-                Problem?.Invoke( this, new ErrorEventArgs( ex ) );
+                Utility.LogFile(ex.Message, "Sending ThreadAbortException");
+            }
+            catch (ObjectDisposedException ex) { Utility.LogFile(ex.Message, "Sending ObjectDisposedException"); }
+            catch (IOException ex)
+            {
+                Utility.LogFile(ex.Message, "Sending IOException");
+                Problem?.Invoke(this, new ErrorEventArgs(ex));
             }
             finally { }
         }
