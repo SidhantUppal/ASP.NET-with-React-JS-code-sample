@@ -60,15 +60,17 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
             try
             {
                 Listener.Start();
+                Utility.LogFile("ListeningRunner()", "Listener - start");
 
                 while (true)
                 {
                     TcpClient tcpClient = Listener.AcceptTcpClient();
-                    var str = $"Client {tcpClient.Client.RemoteEndPoint} connected at {ServerIP}:{ServerPort}";
-                    Utility.LogFile("ListeningRunner", str);
+                    // var str = $"Client {tcpClient.Client.RemoteEndPoint} connected at {ServerIP}:{ServerPort}";
+                    Utility.LogFile("ListeningRunner", "Inside While");
                     lock (ClientQueueLock)
                     {
                         ClientQueue.Enqueue(tcpClient);
+                        Utility.LogFile("ClientQueueLock", "Client Queue Lock");
                     }
                 }
             }

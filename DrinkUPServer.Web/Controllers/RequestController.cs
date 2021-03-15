@@ -33,27 +33,27 @@ namespace DrinkUPServer.Web.Controllers
             }
         }
 
-        [HttpGet]
-        [Route("connect")]
-        public ConnectionResponse Connection()
-        {
-            Utility.LogFile("Type", "HttpGet");
-            Utility.LogFile("Connection", "Request Controller");
-            ConnectionReference connectionReference = new ConnectionReference();
-            connectionReference.Query = "mach-one-query";
-            try
-            {
-                return MachineServer.Program.Connect(connectionReference);
-            }
-            catch (Exception ex)
-            {
-                Utility.LogFile(ex.Message, "Request Controller");
-                return new ConnectionResponse
-                {
-                    Status = ConnectionResponse.Statuses.Failure
-                };
-            }
-        }
+        //[HttpGet]
+        //[Route("connect")]
+        //public ConnectionResponse Connection()
+        //{
+        //    Utility.LogFile("Type", "HttpGet");
+        //    Utility.LogFile("Connection", "Request Controller");
+        //    ConnectionReference connectionReference = new ConnectionReference();
+        //    connectionReference.Query = "mach-one-query";
+        //    try
+        //    {
+        //        return MachineServer.Program.Connect(connectionReference);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Utility.LogFile(ex.Message, "Request Controller");
+        //        return new ConnectionResponse
+        //        {
+        //            Status = ConnectionResponse.Statuses.Failure
+        //        };
+        //    }
+        //}
 
         [HttpPost]
         [Route( "availability" )]

@@ -1,65 +1,50 @@
-Data Time:15-03-2021 10:45:48
+Data Time:15-03-2021 17:30:06
 Exception Name:RequestStructures
 Event Name:Functions
 -------------------------------------------------
                                                  
-Data Time:15-03-2021 10:45:48
+Data Time:15-03-2021 17:30:13
 Exception Name:
 Event Name:Connection
 -------------------------------------------------
                                                  
-Data Time:15-03-2021 10:45:48
+Data Time:15-03-2021 17:30:14
 Exception Name:Listener started at 
 Event Name:20.186.115.164:3687
 -------------------------------------------------
                                                  
-Data Time:15-03-2021 10:45:48
+Data Time:15-03-2021 17:30:15
 Exception Name:Run
 Event Name:Program
 -------------------------------------------------
                                                  
-Data Time:15-03-2021 10:45:48
-Exception Name:QueryDeliveringRunner
-Event Name:Functions
--------------------------------------------------
-                                                 
-Data Time:15-03-2021 10:45:48
+Data Time:15-03-2021 17:30:21
 Exception Name:The requested address is not valid in its context.
 Event Name:Server ListeningRunner IOException
 -------------------------------------------------
                                                  
-Data Time:15-03-2021 10:56:06
+Data Time:15-03-2021 17:31:37
 Exception Name:RequestStructures
 Event Name:Functions
 -------------------------------------------------
                                                  
-Data Time:15-03-2021 10:56:15
+Data Time:15-03-2021 17:31:38
 Exception Name:
 Event Name:Connection
 -------------------------------------------------
                                                  
-Data Time:15-03-2021 10:56:25
+Data Time:15-03-2021 17:31:38
 Exception Name:Listener started at 
 Event Name:20.186.115.164:3687
 -------------------------------------------------
                                                  
-Data Time:15-03-2021 10:56:26
+Data Time:15-03-2021 17:31:38
 Exception Name:Run
 Event Name:Program
 -------------------------------------------------
                                                  
-Data Time:15-03-2021 10:56:26
-Exception Name:QueryDeliveringRunner
-Event Name:Functions
--------------------------------------------------
-                                                 
-Data Time:15-03-2021 10:56:30
+Data Time:15-03-2021 17:31:38
 Exception Name:The requested address is not valid in its context.
 Event Name:Server ListeningRunner IOException
--------------------------------------------------
-                                                 
-Data Time:15-03-2021 10:57:40
-Exception Name:Development
-Event Name:Configure
 -------------------------------------------------
                                                  

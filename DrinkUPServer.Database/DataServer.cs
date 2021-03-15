@@ -8,7 +8,8 @@ namespace DrinkUPServer.Database
     {
         public DataServer ()
             // Here's where to set the Database query string.
-            : base( @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DrUPDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" ) { }
+            /// : base( @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DrUPDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" ) { }
+            : base(@"Server=tcp:drinkupserver.database.windows.net,1433;Initial Catalog=DrUPBD;Persist Security Info=False;User ID=drinkup;Password=Talentelgia123#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;") { }
 
         public DbSet<Customer> Customers { get; set; }
 
