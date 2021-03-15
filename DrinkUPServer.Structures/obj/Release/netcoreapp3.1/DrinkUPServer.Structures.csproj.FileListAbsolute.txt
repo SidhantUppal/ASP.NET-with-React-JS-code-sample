@@ -23,3 +23,4 @@ E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\
 E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Structures\obj\Release\netcoreapp3.1\DrinkUPServer.Structures.csproj.CoreCompileInputs.cache
 E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Structures\obj\Release\netcoreapp3.1\DrinkUPServer.Structures.dll
 E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Structures\obj\Release\netcoreapp3.1\DrinkUPServer.Structures.pdb
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Structures\obj\Release\netcoreapp3.1\DrinkUPServer.Structures.csprojAssemblyReference.cache

@@ -30,7 +30,7 @@ namespace DrinkUPServer.Structures.Constructs
         int Duration { get; set; }
     }
 
-    public class Boost : Base, IBoost
+    public class Boost: Base, IBoost
     {
         [Key]
         public string Id { get; set; }
@@ -58,5 +58,8 @@ namespace DrinkUPServer.Structures.Constructs
 
         public string Ingredients { get; set; }
         public string Details { get; set; }
+        public string MediaID { get; set; }
+        public bool Isdeleted { get; set; }
+        public string Comment { get; set; }
     }
 }

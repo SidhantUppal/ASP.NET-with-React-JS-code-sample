@@ -26,10 +26,10 @@ namespace DrinkUPServer.Structures.Constructs
         bool Enabled { get; set; }
     }
 
-    public class Size : Base, ISize
+    public class Size: Base, ISize
     {
         [Key]
-        public string Id { get; set; }
+        public string Id { get; set; } 
 
         [JsonIgnore]
         public Machine Machine { get; set; }
@@ -44,5 +44,7 @@ namespace DrinkUPServer.Structures.Constructs
         public string Image { get; set; }
         public int Capacity { get; set; }
         public int Price { get; set; }
+        public string MediaID { get; set; }
+        public bool Isdeleted { get; set; }
     }
 }

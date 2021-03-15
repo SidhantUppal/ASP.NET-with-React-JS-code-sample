@@ -15,5 +15,9 @@ namespace DrinkUPServer.Structures.Constructs
         public string Location { get; set; }
 
         public string InitializationToken { get; set; }
+
+        public bool Isdeleted { get; set; }
+
+        public string Description { get; set; }
     }
 }
