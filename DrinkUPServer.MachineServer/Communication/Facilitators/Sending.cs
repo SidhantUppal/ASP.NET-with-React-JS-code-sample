@@ -10,7 +10,7 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
     internal sealed class Sending : IDisposable
     {
         private static readonly string KeepAliveMessage = @"<![KEEP-ALIVE]!>";
-        private static readonly int KeepAliveGap = 1000;
+        private static readonly int KeepAliveGap = 10000;
 
         private NetworkStream NetworkStream;
         private Thread SendingThread;
