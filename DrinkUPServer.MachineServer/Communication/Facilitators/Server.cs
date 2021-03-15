@@ -42,7 +42,7 @@ namespace DrinkUPServer.MachineServer.Communication.Facilitators
         {
 #if DEBUG
 #else
-            //ServerIP = Dns.GetHostEntry( Dns.GetHostName() ).AddressList.Last().MapToIPv4();
+            ServerIP = Dns.GetHostEntry( Dns.GetHostName() ).AddressList.Last().MapToIPv4();
 #endif
             IPEndPoint EndPoint = new IPEndPoint( ServerIP, ServerPort );
 
