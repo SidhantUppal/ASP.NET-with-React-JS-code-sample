@@ -17,7 +17,8 @@ namespace DrinkUPServer.MachineServer.Procedures
 
         private static async void RequestStructuresHandler ( StructuresRequest message )
         {
-            var ipDetails = await Pool.Database.GetAzureIPDetails();
+            Utility.LogFile("Call RequestStructuresHandler", "RequestStructuresHandler");
+            //var ipDetails = await Pool.Database.GetAzureIPDetails();
 
             Machine machine = await Pool.Database.GetMachine( message.From );
             Utility.LogFile(machine.Name, "Functions");

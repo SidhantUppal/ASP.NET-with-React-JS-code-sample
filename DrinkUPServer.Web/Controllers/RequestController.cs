@@ -55,5 +55,13 @@ namespace DrinkUPServer.Web.Controllers
             Utility.LogFile("Dispensation", "Request Controller");
             return MachineServer.Program.Dispense( dispensationReference );
         }
+
+        [HttpGet("ConnectionOrNot")]
+        public ConnectionResponse ConnectionOrNot()
+        {
+            ConnectionReference connectionReference = new ConnectionReference();
+            connectionReference.Query = "mach-one-query";
+            return MachineServer.Program.Connect(connectionReference);
+        }
     }
 }

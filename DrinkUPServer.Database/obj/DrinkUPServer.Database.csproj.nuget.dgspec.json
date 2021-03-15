@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\Documents\\GitHub\\drinkUpServer\\DrinkUPServer.Database\\DrinkUPServer.Database.csproj": {}
+    "E:\\Talentelgia\\DrinkUpServer\\DrinkUp_Project\\gitHub-drinkUpServer\\drinkUpServer\\DrinkUPServer.Database\\DrinkUPServer.Database.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\Documents\\GitHub\\drinkUpServer\\DrinkUPServer.Database\\DrinkUPServer.Database.csproj": {
+    "E:\\Talentelgia\\DrinkUpServer\\DrinkUp_Project\\gitHub-drinkUpServer\\drinkUpServer\\DrinkUPServer.Database\\DrinkUPServer.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Documents\\GitHub\\drinkUpServer\\DrinkUPServer.Database\\DrinkUPServer.Database.csproj",
+        "projectUniqueName": "E:\\Talentelgia\\DrinkUpServer\\DrinkUp_Project\\gitHub-drinkUpServer\\drinkUpServer\\DrinkUPServer.Database\\DrinkUPServer.Database.csproj",
         "projectName": "DrinkUPServer.Database",
-        "projectPath": "C:\\Users\\lenovo\\Documents\\GitHub\\drinkUpServer\\DrinkUPServer.Database\\DrinkUPServer.Database.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Documents\\GitHub\\drinkUpServer\\DrinkUPServer.Database\\obj\\",
+        "projectPath": "E:\\Talentelgia\\DrinkUpServer\\DrinkUp_Project\\gitHub-drinkUpServer\\drinkUpServer\\DrinkUPServer.Database\\DrinkUPServer.Database.csproj",
+        "packagesPath": "C:\\Users\\SAUNAK\\.nuget\\packages\\",
+        "outputPath": "E:\\Talentelgia\\DrinkUpServer\\DrinkUp_Project\\gitHub-drinkUpServer\\drinkUpServer\\DrinkUPServer.Database\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SAUNAK\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,9 +26,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\lenovo\\Documents\\GitHub\\drinkUpServer\\DrinkUPServer.Structures\\DrinkUPServer.Structures.csproj": {
-                "projectPath": "C:\\Users\\lenovo\\Documents\\GitHub\\drinkUpServer\\DrinkUPServer.Structures\\DrinkUPServer.Structures.csproj"
+              "E:\\Talentelgia\\DrinkUpServer\\DrinkUp_Project\\gitHub-drinkUpServer\\drinkUpServer\\DrinkUPServer.Structures\\DrinkUPServer.Structures.csproj": {
+                "projectPath": "E:\\Talentelgia\\DrinkUpServer\\DrinkUp_Project\\gitHub-drinkUpServer\\drinkUpServer\\DrinkUPServer.Structures\\DrinkUPServer.Structures.csproj"
               }
             }
           }
@@ -41,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "EntityFramework": {
               "target": "Package",
@@ -66,21 +68,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lenovo\\Documents\\GitHub\\drinkUpServer\\DrinkUPServer.Structures\\DrinkUPServer.Structures.csproj": {
+    "E:\\Talentelgia\\DrinkUpServer\\DrinkUp_Project\\gitHub-drinkUpServer\\drinkUpServer\\DrinkUPServer.Structures\\DrinkUPServer.Structures.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Documents\\GitHub\\drinkUpServer\\DrinkUPServer.Structures\\DrinkUPServer.Structures.csproj",
+        "projectUniqueName": "E:\\Talentelgia\\DrinkUpServer\\DrinkUp_Project\\gitHub-drinkUpServer\\drinkUpServer\\DrinkUPServer.Structures\\DrinkUPServer.Structures.csproj",
         "projectName": "DrinkUPServer.Structures",
-        "projectPath": "C:\\Users\\lenovo\\Documents\\GitHub\\drinkUpServer\\DrinkUPServer.Structures\\DrinkUPServer.Structures.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Documents\\GitHub\\drinkUpServer\\DrinkUPServer.Structures\\obj\\",
+        "projectPath": "E:\\Talentelgia\\DrinkUpServer\\DrinkUp_Project\\gitHub-drinkUpServer\\drinkUpServer\\DrinkUPServer.Structures\\DrinkUPServer.Structures.csproj",
+        "packagesPath": "C:\\Users\\SAUNAK\\.nuget\\packages\\",
+        "outputPath": "E:\\Talentelgia\\DrinkUpServer\\DrinkUp_Project\\gitHub-drinkUpServer\\drinkUpServer\\DrinkUPServer.Structures\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SAUNAK\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,6 +94,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -103,6 +106,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -118,7 +122,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
