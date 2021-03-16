@@ -18,7 +18,7 @@ namespace DrinkUPServer.MachineServer.Communication
             }
             else
             {
-                log = File.AppendText("logfile");
+                log = File.AppendText("logfile.txt");
             }
             // Write to the file:
             log.WriteLine("Data Time:" + DateTime.Now);
