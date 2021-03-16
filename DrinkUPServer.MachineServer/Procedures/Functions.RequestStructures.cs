@@ -13,6 +13,10 @@ namespace DrinkUPServer.MachineServer.Procedures
         {
             Utility.LogFile("RequestStructures", "Functions");
             Pool.Connection.RegisterMessageListener<StructuresRequest>(RequestStructuresHandler);
+
+            //StructuresRequest message = new StructuresRequest();
+            //message.From = "mach-one";
+            //RequestStructuresHandler(message); 
         }
 
         private static async void RequestStructuresHandler(StructuresRequest message)
