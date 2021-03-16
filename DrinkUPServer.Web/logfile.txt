@@ -48,3 +48,48 @@ Exception Name:The requested address is not valid in its context.
 Event Name:Server ListeningRunner IOException
 -------------------------------------------------
                                                  
+Data Time:16-03-2021 10:01:17
+Exception Name:RequestStructures
+Event Name:Functions
+-------------------------------------------------
+                                                 
+Data Time:16-03-2021 10:01:18
+Exception Name:
+Event Name:Connection
+-------------------------------------------------
+                                                 
+Data Time:16-03-2021 10:01:19
+Exception Name:Listener started at 
+Event Name:192.168.1.108:3687
+-------------------------------------------------
+                                                 
+Data Time:16-03-2021 10:01:19
+Exception Name:ListeningRunner()
+Event Name:Listener - start
+-------------------------------------------------
+                                                 
+Data Time:16-03-2021 10:55:02
+Exception Name:RequestStructures
+Event Name:Functions
+-------------------------------------------------
+                                                 
+Data Time:16-03-2021 10:55:02
+Exception Name:
+Event Name:Connection
+-------------------------------------------------
+                                                 
+Data Time:16-03-2021 10:55:03
+Exception Name:Listener started at 
+Event Name:20.186.115.164:3687
+-------------------------------------------------
+                                                 
+Data Time:16-03-2021 10:55:03
+Exception Name:Run
+Event Name:Program
+-------------------------------------------------
+                                                 
+Data Time:16-03-2021 10:55:03
+Exception Name:The requested address is not valid in its context.
+Event Name:Server ListeningRunner IOException
+-------------------------------------------------
+                                                 

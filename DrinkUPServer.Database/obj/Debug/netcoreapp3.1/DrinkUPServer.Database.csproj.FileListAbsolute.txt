@@ -66,3 +66,4 @@ E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\
 E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.dll
 E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.pdb
 E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.genruntimeconfig.cache
+E:\Talentelgia\DrinkUpServer\DrinkUp_Project\gitHub-drinkUpServer\drinkUpServer\DrinkUPServer.Database\obj\Debug\netcoreapp3.1\DrinkUPServer.Database.Migrations.AddNewTables.resources

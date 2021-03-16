@@ -9,13 +9,13 @@ namespace DrinkUPServer.MachineServer.Procedures
 {
     internal static partial class Functions
     {
-        internal static void RequestStructures ()
+        internal static void RequestStructures()
         {
             Utility.LogFile("RequestStructures", "Functions");
-            Pool.Connection.RegisterMessageListener<StructuresRequest>( RequestStructuresHandler );
+            Pool.Connection.RegisterMessageListener<StructuresRequest>(RequestStructuresHandler);
         }
 
-        private static async void RequestStructuresHandler ( StructuresRequest message )
+        private static async void RequestStructuresHandler(StructuresRequest message)
         {
             try
             {
@@ -23,7 +23,7 @@ namespace DrinkUPServer.MachineServer.Procedures
                 //var ipDetails = await Pool.Database.GetAzureIPDetails();
 
                 Machine machine = await Pool.Database.GetMachine(message.From);
-                Utility.LogFile(machine.Name, "Functions");
+                Utility.LogFile(machine.Name, "Get Machine Name - RequestStructuresHandler"); 
 
                 SizesDelivery sizeDelivery = new SizesDelivery
                 {
@@ -43,7 +43,7 @@ namespace DrinkUPServer.MachineServer.Procedures
                 Pool.Connection.Send(boostDelivery);
                 Utility.LogFile("Send boost", "Functions");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Utility.LogFile(ex.Message, "RequestStructuresHandler - Error");
             }

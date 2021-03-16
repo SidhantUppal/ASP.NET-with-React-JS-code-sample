@@ -80,7 +80,7 @@ namespace DrinkUPServer.Database
                 machine = (
 
                 from m in DataServer.Machines
-                //where m.Id == id
+                where m.Id == id
                 select m
 
                 ).FirstOrDefault();
