@@ -28,7 +28,7 @@ communication. It consists of the Client component that references individual ma
 Server component which contains a TCP Listener to generate Client handlers, and methods of
 writing messages to the client and receiving messages from them in C# object forms.
 
-DrinkUPServer.Web contains the React WebApp and the API controllers used to facilitate
+DrinkUPServer.Web contains the Angular WebApp and the API controllers used to facilitate
 communication between the WebApp/NativeMobileApp and the machines. This is the main project
 as it runs on IIS and IIS allows easy management of the server including changing the
 address, addition of SSL and it can run the server program on reboot of the host server.
